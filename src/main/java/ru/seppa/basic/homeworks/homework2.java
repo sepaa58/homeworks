@@ -20,52 +20,52 @@ public class homework2 {
                 // а ввести сначала string а потом int у меня не получилось без второго сканера подскажите как правильно
                 String Line = s.nextLine();
                 System.out.println(" Сколько раз её вывести");
-                int NumberOfLine = scanner.nextInt();
+                int numberOfLine = scanner.nextInt();
                 System.out.println(" ");
-                PrintString(NumberOfLine, Line);
+                printString(numberOfLine, Line);
             } else if (switchcase == 2) {
                 System.out.println(" ");
                 //Этот фрагмент кода я буду часто копировать и правильнее было бы вписать его в функцию с возвратом
                 //Но мы вроде не проходили return, по этому я не стал
                 System.out.println(" Введите длину массива");
-                int MasLen = scanner.nextInt();
-                int[] DataToSum = new int[MasLen];
+                int masLen = scanner.nextInt();
+                int[] dataToSum = new int[masLen];
                 System.out.println(" Заполните массив данными");
-                for (int i = 0; i < DataToSum.length; i++){
-                    DataToSum[i] = scanner.nextInt();
+                for (int i = 0; i < dataToSum.length; i++){
+                    dataToSum[i] = scanner.nextInt();
                 }
-                SummationMas(DataToSum);
+                summationMas(dataToSum);
             } else if (switchcase == 3) {
                 System.out.println(" ");
                 System.out.println(" Введите длину массива ");
-                int ArrayLen = scanner.nextInt();
+                int arrayLen = scanner.nextInt();
                 System.out.println(" Каким числом хотите заполнить ");
-                int FillMas = scanner.nextInt();
-                int[] array = new int[ArrayLen];
-                FillArray(array, FillMas);
+                int fillMas = scanner.nextInt();
+                int[] array = new int[arrayLen];
+                fillArray(array, fillMas);
             } else if (switchcase == 4) {
                 System.out.println(" ");
                 System.out.println(" Введите длину массива ");
-                int MasLen = scanner.nextInt();
-                int[] ArrayToBoost = new int[MasLen];
+                int masLen = scanner.nextInt();
+                int[] arrayToBoost = new int[masLen];
                 System.out.println(" Заполните массив данными");
-                for (int i = 0; i < ArrayToBoost.length; i++){
-                    ArrayToBoost[i] = scanner.nextInt();
+                for (int i = 0; i < arrayToBoost.length; i++){
+                    arrayToBoost[i] = scanner.nextInt();
                 }
                 System.out.println(" На какое число хотите увеличить ");
-                int ArrayPlus = scanner.nextInt();
-                ArrayPlus(ArrayToBoost, ArrayPlus);
+                int arrayPlus = scanner.nextInt();
+                arrayPlus(arrayToBoost, arrayPlus);
             } else if (switchcase == 5) {
                 System.out.println(" ");
                 System.out.println(" Введите длину массива (для корректной работы число должно быть четным)");
-                int MasLen = scanner.nextInt();
-                System.out.println(MasLen);
-                int[] ArrFindMax = new int[MasLen];
+                int masLen = scanner.nextInt();
+                System.out.println(masLen);
+                int[] arrFindMax = new int[masLen];
                 System.out.println(" Заполните массив данными");
-                for (int i = 0; i < ArrFindMax.length; i++){
-                    ArrFindMax[i] = scanner.nextInt();
+                for (int i = 0; i < arrFindMax.length; i++){
+                    arrFindMax[i] = scanner.nextInt();
                 }
-                FindMax(ArrFindMax);
+                findMax(arrFindMax);
             } else if (switchcase == 6) {
                 System.out.println(" ");
                 //Я тут столкнулся с проблемой. Не понимаю как проверить существует ли элемент массива
@@ -73,43 +73,43 @@ public class homework2 {
                 int[] a = {1,1,1};
                 int[] b = {2,3,2,3};
                 int[] c = {3,4,3,4,3};
-                SumArray(a, b, c);
+                sumArray(a, b, c);
 
             } else if (switchcase == 7) {
                 System.out.println(" ");
                 System.out.println(" Введите длину массива ");
-                int MasLen = scanner.nextInt();
-                int[] ArrayToFind = new int[MasLen];
+                int masLen = scanner.nextInt();
+                int[] arrayToFind = new int[masLen];
                 System.out.println(" Заполните массив данными");
-                for (int i = 0; i < ArrayToFind.length; i++){
-                    ArrayToFind[i] = scanner.nextInt();
+                for (int i = 0; i < arrayToFind.length; i++){
+                    arrayToFind[i] = scanner.nextInt();
                 }
-                FindDot(ArrayToFind);
+                findDot(arrayToFind);
             } else if (switchcase == 8) {
                 System.out.println(" Введите длину массива ");
-                int MasLen = scanner.nextInt();
-                int[] ArrAn = new int[MasLen];
+                int masLen = scanner.nextInt();
+                int[] arrAn = new int[masLen];
                 System.out.println(" Заполните массив данными");
-                for (int i = 0; i < ArrAn.length; i++){
-                    ArrAn[i] = scanner.nextInt();
+                for (int i = 0; i < arrAn.length; i++){
+                    arrAn[i] = scanner.nextInt();
                 }
                 System.out.println("1 - Проверить на рост\n2 - Проверить на убывание ");
-                int WhatDoYouWant = scanner.nextInt();
-                if (WhatDoYouWant == 1){
-                    ArrUp(ArrAn);
+                int isAscendingOrder  = scanner.nextInt();
+                if (isAscendingOrder  == 1){
+                    arrUp(arrAn);
                 } else {
-                    ArrDown(ArrAn);
+                    arrDown(arrAn);
                 }
             } else if (switchcase == 9) {
                 System.out.println(" ");
                 System.out.println(" Введите длину массива ");
-                int MasLen = scanner.nextInt();
-                int[] MasToRev = new int[MasLen];
+                int masLen = scanner.nextInt();
+                int[] masToRev = new int[masLen];
                 System.out.println(" Заполните массив данными");
-                for (int i = 0; i < MasToRev.length; i++){
-                    MasToRev[i] = scanner.nextInt();
+                for (int i = 0; i < masToRev.length; i++){
+                    masToRev[i] = scanner.nextInt();
                 }
-                ArrReverse(MasToRev);
+                arrReverse(masToRev);
             }
             if (switchcase == 0){
                 break;
@@ -118,117 +118,131 @@ public class homework2 {
 
     }
 
-    public static void PrintString(int a, String string){
+    public static void printString(int a, String string){
 
         for (int i = 0; i < a; i++){
             System.out.println(string);
         }
     }
-    public static void SummationMas (int[] DataToSum){
-        int MasSum = 0;
-        for (int i = 0; i < DataToSum.length; i++){
-            if (DataToSum[i] > 5){
-                MasSum += DataToSum[i];
+    public static void summationMas (int[] dataToSum){
+        int masSum = 0;
+        for (int i = 0; i < dataToSum.length; i++){
+            if (dataToSum[i] > 5){
+                masSum += dataToSum[i];
             }
         }
-        System.out.println("Сумма чисел > 5 = " + MasSum);
+        System.out.println("Сумма чисел > 5 = " + masSum);
     }
-    public static void FillArray (int[] array, int FillMas){
+    public static void fillArray (int[] array, int fillMas){
         System.out.println(" ");
         for (int i = 0; i < array.length; i++){
-            array[i] = FillMas;
+            array[i] = fillMas;
         }
         System.out.println(Arrays.toString(array));
     }
-    public static void ArrayPlus (int[] ArrayToBoost, int VarToPlus){
+    public static void arrayPlus (int[] arrayToBoost, int varToPlus){
         System.out.println(" ");
-        for (int i = 0; i < ArrayToBoost.length; i++){
-            ArrayToBoost[i] += VarToPlus;
+        for (int i = 0; i < arrayToBoost.length; i++){
+            arrayToBoost[i] += varToPlus;
         }
-        System.out.println(Arrays.toString(ArrayToBoost));
+        System.out.println(Arrays.toString(arrayToBoost));
     }
-    public static void FindMax (int[] ArrFindMax){
-        int FirstHalf = 0;
-        int SecondHalf = 0;
-        for (int i = 0; i < ArrFindMax.length; i++){
-            if (i < ArrFindMax.length / 2){
-                FirstHalf += ArrFindMax[i];
+    public static void findMax (int[] arrFindMax){
+        int firstHalf = 0;
+        int secondHalf = 0;
+        for (int i = 0; i < arrFindMax.length; i++){
+            if (i < arrFindMax.length / 2){
+                firstHalf += arrFindMax[i];
             } else {
-                SecondHalf += ArrFindMax[i];
+                secondHalf += arrFindMax[i];
             }
         }
-        if (FirstHalf > SecondHalf){
+        if (firstHalf > secondHalf){
             System.out.println("Первая половина больше");
-        } else if (FirstHalf < SecondHalf) {
+        } else if (firstHalf < secondHalf) {
             System.out.println("Вторая половина больше");
         } else {
             System.out.println("Обе половины одинакового размера");
         }
     }
-    public static void SumArray(int[] a, int[] b, int[] c){
-        c[0] += a[0] + b[0];
-        c[1] += a[1] + b[1];
-        c[2] += a[2] + b[2];
-        c[3] += b[3];
-        System.out.println(Arrays.toString(c));
-    }
-    public static void FindDot(int[] ArrayToFind){
-        int LeftSum = 0;
-        int RightSum = 0;
-        for (int i = 0; i < ArrayToFind.length; i++){
-            RightSum += ArrayToFind[i];
+    public static void sumArray(int[] a, int[] b, int[] c){
+        if (a.length > b.length){
+            for (int i = 0; i < b.length; i++) {
+                b[i] += a[i];
+            }
+        } else {
+            for (int i = 0; i < a.length; i++) {
+                b[i] += a[i];
+            }
         }
-        for (int i = 0; i < ArrayToFind.length; i++){
-            if (RightSum == LeftSum){
-                System.out.println("Точка Равенства сумм левой и правой части находится между " + ArrayToFind[i-1] + " и " + ArrayToFind[i]);
+        if (b.length > c.length){
+            for (int i = 0; i < c.length; i++) {
+                b[i] += c[i];
+            }
+        } else {
+            for (int i = 0; i < b.length; i++) {
+                b[i] += c[i];
+            }
+        }
+        System.out.println(Arrays.toString(b));
+    }
+    public static void findDot(int[] arrayToFind){
+        int leftSum = 0;
+        int rightSum = 0;
+        for (int i = 0; i < arrayToFind.length; i++){
+            rightSum += arrayToFind[i];
+        }
+        for (int i = 0; i < arrayToFind.length; i++){
+            if (rightSum == leftSum){
+                System.out.println("Точка Равенства сумм левой и правой части находится между " + arrayToFind[i-1] + " и " + arrayToFind[i]);
                 break;
-            } else if (LeftSum > RightSum) {
+            } else if (leftSum > rightSum) {
                 System.out.println("Такой точки нет");
                 break;
             } else {
-                LeftSum += ArrayToFind[i];
-                RightSum -= ArrayToFind[i];
+                leftSum += arrayToFind[i];
+                rightSum -= arrayToFind[i];
             }
         }
 
     }
-    public static void ArrUp(int[] ArrAn){
-        boolean Flag = true;
-        int BrP = 0;
-        for (int i = 0; i < ArrAn.length - 1; i++){
-            if (ArrAn[i] >= ArrAn[i+1]){
-                Flag = false;
-                BrP = i;
+    public static void arrUp(int[] arrAn){
+        boolean flag = true;
+        int brP = 0;
+        for (int i = 0; i < arrAn.length - 1; i++){
+            if (arrAn[i] >= arrAn[i+1]){
+                flag = false;
+                brP = i;
             }
         }
-        if (Flag){
+        if (flag){
             System.out.println("Массив всегда растёт");
         } else {
-            System.out.println("Массив растет не всегда. Рост нарушается в точке с номером " + BrP);
+            System.out.println("Массив растет не всегда. Рост нарушается в точке с номером " + brP);
         }
     }
-    public static void ArrDown(int[] ArrAn){
-        boolean Flag = true;
-        int BrP = 0;
-        for (int i = 0; i < ArrAn.length - 1; i++){
-            if (ArrAn[i] <= ArrAn[i+1]){
-                Flag = false;
-                BrP = i;
+    public static void arrDown(int[] arrAn){
+        boolean flag = true;
+        int brP = 0;
+        for (int i = 0; i < arrAn.length - 1; i++){
+            if (arrAn[i] <= arrAn[i+1]){
+                flag = false;
+                brP = i;
             }
         }
-        if (Flag){
+        if (flag){
             System.out.println("Массив всегда убывает");
         } else {
-            System.out.println("Массив убывает не всегда. Рост нарушается в точке с номером " + BrP);
+            System.out.println("Массив убывает не всегда. Рост нарушается в точке с номером " + brP);
         }
     }
-    public static void ArrReverse(int[] MasToRev){
+    public static void arrReverse(int[] masToRev){
         int swap = 0;
-        for (int i = 0; i < MasToRev.length/2; i++){
-            swap = MasToRev[i];
-            MasToRev[i] = MasToRev[MasToRev.length-(i+1)];
-            MasToRev[MasToRev.length-(i+1)] = swap;
+        for (int i = 0; i < masToRev.length/2; i++){
+            swap = masToRev[i];
+            masToRev[i] = masToRev[masToRev.length-(i+1)];
+            masToRev[masToRev.length-(i+1)] = swap;
         }
-        System.out.println(Arrays.toString(MasToRev));
+        System.out.println(Arrays.toString(masToRev));
     }
 }
